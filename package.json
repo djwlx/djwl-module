@@ -29,17 +29,23 @@
     "node_modules/",
     "dist/"
   ],
-  "dependencies": {},
-  "peerDependencies": {},
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
   "devDependencies": {
-    "@modern-js/module-tools": "2.55.0",
     "@modern-js/eslint-config": "2.55.0",
-    "typescript": "~5.0.4",
+    "@modern-js/module-tools": "2.55.0",
     "@types/node": "~16.11.7",
-    "rimraf": "~3.0.2",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "husky": "~8.0.1",
     "lint-staged": "~13.1.0",
     "prettier": "~2.8.1",
-    "husky": "~8.0.1"
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "rimraf": "~3.0.2",
+    "typescript": "~5.0.4"
   },
   "sideEffects": [],
   "publishConfig": {
