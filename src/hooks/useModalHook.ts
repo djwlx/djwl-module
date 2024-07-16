@@ -7,7 +7,7 @@ export type ModalHookProps<T = any> = {
   visible: boolean;
   data?: T;
   closeModal: () => void;
-  setModalData: (mode: ModalModeType, data?: T | undefined) => void;
+  setModalData: (mode: ModalModeType, data?: T) => void;
 };
 
 const useModalHook = <T>(): ModalHookProps<T> => {
