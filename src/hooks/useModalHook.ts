@@ -10,7 +10,7 @@ export type ModalHookProps<T = any> = {
   setModalData: (mode: ModalModeType, data?: T) => void;
 };
 
-const useModalHook = <T>(): ModalHookProps<T> => {
+export function useModalHook<T>(): ModalHookProps<T> {
   const [mode, setMode] = useState<ModalModeType>('close');
   const [data, setData] = useState<T>();
 
@@ -33,6 +33,4 @@ const useModalHook = <T>(): ModalHookProps<T> => {
     setModalData,
     closeModal,
   };
-};
-
-export default useModalHook;
+}
